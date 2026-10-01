@@ -235,11 +235,11 @@ div.text p{
 }
 .contactInfo{
     width: 500px;
-    padding-right: 2rem;
+    padding-right: 1rem;
 }
 .contactForm{
     width: 500px;
-    padding-left: 2rem;
+    padding-left: 1rem;
     display: table;
 }
 div.contactForm form div{
