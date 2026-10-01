@@ -1,0 +1,468 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.navbar{
+    background-color: red;
+    height: 80px;
+}
+nav.navbar img{
+    position: absolute;
+    top: 10px;
+    left: 3%;
+    width: 60px;
+}
+nav.navbar ul{
+    float: right;
+    margin-right: 25px;
+}
+nav.navbar ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 15px;
+}
+ul.menu li a{
+    color: white;
+    text-decoration: none;
+    position: relative;
+    font-size: 18px;
+    padding: 5px 0px;
+}
+ul.menu li a::before{
+    position: absolute;
+    content: "";
+    bottom: 0px;
+    left: 0px;
+    height: 2px;
+    background-color: white;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s linear;
+}
+ul.menu li a:hover:before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+label #btn, label #cancel{
+    position: relative;
+    color: white;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+
+.bg{
+    position: relative;
+    background-image: url("toyota\ supra\ a90.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.bg::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 0, 0, 0.219);
+    height: 700px;
+    width: 100%;
+    z-index: -2;
+}
+div.bg h2{
+    font-size: 5rem;
+    color: white;
+    text-align: center;
+}
+div.bg p{
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}  
+#introduction{
+    background-color: rgba(255, 0, 0, 0.050);
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.cardsection{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 1rem;
+}
+.card{
+    /* background-color: rgba(0, 0, 255, 0.596); */
+    background-color: rgb(221, 78, 78);
+    width: 400px;
+    height: 500px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.39);
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.jjk{
+    width: 100%;
+}
+div.cardtext h3{
+    font-size: 2.5rem;
+}
+div.cardtext p{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+div.cardtext a{
+    background-color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.cardtext{
+    margin-top: 2rem;
+}
+.cardtit{
+    font-size: 4rem;
+    padding-top: 2rem;
+    text-align: center;
+}
+div#introduction p.title{
+    font-size: 4rem;
+    padding-top: 2.5rem;
+    text-align: center;
+    text-transform: capitalize;
+}
+.body{
+    font-size: 1.5rem;
+    text-align: center;
+}
+div#introduction a{
+    background-color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.boss{
+   text-align: center; 
+   padding-top: 1.5rem;
+   padding-bottom: 2.5rem;
+}
+body h1.pad{
+    text-align: center;
+}
+div.cad a{
+    background-color: rgb(221, 78, 78);
+    padding: 1rem 3rem;
+    border-radius: 10px;
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+}
+body div.cad{
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
+.niii{
+    background-color: black;
+    color: white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.ceo{
+    display: flex;
+    justify-content: center;
+    margin: 2.5em 0rem;
+    flex-wrap: wrap;
+}
+
+.ceo2{
+    display: flex;
+    justify-content: center;
+    padding: 2.5em 0rem;
+    background-color: rgba(221, 78, 78, 0.267);
+    flex-wrap: wrap;
+}
+
+.text{
+    width: 500px;
+    margin: 20px;
+}
+.image{
+    width: 500px;
+    margin: 20px;
+}
+div.image img{
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+div.text h2{
+    font-size: 2.5rem;
+}
+div.text p{
+    font-size: 1.5rem;
+}
+
+
+.contactContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 3rem;
+}
+.contactInfo{
+    width: 500px;
+    padding-right: 2rem;
+}
+.contactForm{
+    width: 500px;
+    padding-left: 2rem;
+    display: table;
+}
+div.contactForm form div{
+    display: table-row;
+}
+form div label{
+    display: table-cell;
+}
+form div input{
+    display: table-cell;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+}
+form div textarea{
+    display: table-cell;
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+}
+div.contactContainer div.contactInfo ul{
+    font-size: 20px;
+}
+table{
+    width: 100%;
+}
+th,td{
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: left;
+}
+th{
+    background-color: #333;
+    color: white;
+    font-size: 1.5rem;
+}
+tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+td{
+    font-size: 1.2rem;
+}
+tr:hover{
+    background-color: #ddd;
+}
+.pipi{
+    font-weight: bold;
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 0.7rem;
+}
+.imagegrid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+    gap: 10px;
+    background-color: black;
+}
+body div.imagegrid img{
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+}
+.paragraphcar{
+    font-weight: bold;
+    font-size: 40px;
+    text-transform: capitalize;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    color: #333;
+}
+div.contactInfo ul li{
+    list-style: none;
+}
+
+.tb{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    margin-bottom: 2rem;
+}
+
+div.tb img{
+    width: 100%;
+
+}
+
+.tbheading{
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.tbcontainer{
+    padding: 0rem 1rem;
+}
+
+.tablecontainer{
+    width: 100%;
+    overflow-x: auto;
+}
+table{
+    width: 100%;
+    min-width: 600px;
+    border-collapse: collapse;
+}
+
+@media (max-width:1001px) {
+    nav.navbar img{
+        left: 8%;
+    }
+}
+@media (max-width:950px) {
+    nav.navbar img{
+        left: 6%;
+        top: 20px;
+        width: 40px;
+    }
+}
+@media (max-width:850px) {
+    label #btn{
+        display: block;
+        top: 20px;
+    }
+    nav.navbar ul{
+        position: fixed;
+        width: 100%;
+        height: auto;
+        background-color: rgb(160, 18, 18);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav.navbar ul li{
+        display: block;
+        margin: 50px 0px;
+        line-height: 30px;
+    }
+    ul.menu li a{
+        font-size: 20px;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    #check:checked ~ label #btn{
+        display: none;
+    }
+    #check:checked ~ label #cancel{
+        display: block;
+        top: 20px;
+    }
+}
+
+@media (max-width:500px){
+    div.bg h2{
+        font-size: 3rem;
+    }
+    div.bg p{
+        font-size: 1.5rem;
+    }
+    div#introduction p.title{
+        font-size: 2.5rem;
+    }
+    .cardtit{
+        font-size: 2.5rem;
+    }
+    .card{
+        margin: 1rem 0rem;
+        width: 300px;
+    }
+    #introduction{
+        padding: 1rem 0.5rem;
+    }
+    body h1.pad{
+        font-size: 1.5rem;
+    }
+    div.cad a{
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    }
+    .niii{
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    .contactForm{
+    width: 280px;
+    padding-left: 0rem;
+    display: table;
+    margin-top: 2rem;
+    }
+    .contactInfo{
+    width: 280px;
+    padding-right: 0rem;
+    }
+    .imagegrid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 5px;
+    gap: 5px;
+    background-color: black;
+    }
+    .tb{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .tbheading{
+        font-size: 2rem;
+    }
+    .tbh2{
+        font-size: 1.5rem;
+    }
+    table{
+    width: 100%;
+    min-width: 300px;
+    border-collapse: collapse;
+}
+.tablecontainer{
+    padding: 1rem 0.5rem;
+}
+}
