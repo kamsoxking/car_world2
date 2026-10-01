@@ -440,6 +440,7 @@ table{
     .contactInfo{
     width: 280px;
     padding: 5px;
+    font-size: 17px;
     }
     .imagegrid{
     display: grid;
